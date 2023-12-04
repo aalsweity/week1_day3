@@ -1,0 +1,159 @@
+/* Universal Selector - remove any margin that the browser has by default */
+* {
+    margin: 0;
+}
+
+h3{
+    position: relative;
+    text-align: center;
+    margin: 0px, 150px, 200px, 100px;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+
+/* .area-border {
+    border: 2px solid white;
+} */
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 1fr 2fr 10vw;
+    grid-template-rows: 10vh 40vh 1fr;
+    gap: 3vh 0px;
+    grid-template-areas: 
+    
+    "nav nav nav nav"
+    ". prof-pic prof-info . "
+    ". posts posts . ";
+}
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    position: sticky;
+    
+
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.prof-pic {
+    grid-area: prof-pic;
+    align-self: center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 75%;
+    margin: auto;
+}
+
+#prof-img {
+    width: auto;
+    height: auto;
+}
+
+.prof-info {
+    grid-area: prof-info;
+}
+
+.info-container {
+    height: 100%;
+    padding: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+.post-card {
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 1em;
+    margin-bottom: 3vh;
+}
+
+.post-text {
+    text-align: center;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.card-links > a:hover {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+.centered {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    align-content: center;
+  }
+  
+  .column1 {
+    float: left;
+    width: 25%;
+    align-content: center;
+    color: white;
+    background-color: black;
+    align-items: center;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .info1 {
+    align-items: center;
+  }
